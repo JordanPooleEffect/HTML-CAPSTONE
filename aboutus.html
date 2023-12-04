@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KeyTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="pixel">
+    <!--(Goal) To create an about us page on KeyTech-->
+    <div class="header">
+
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor()" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <div class="content_box">
+        <div class="title_box">
+            <p class="for_the_p">KeyTech</p>
+        </div>
+
+        <div class="reviews_container">
+            <div class="inside_box">
+                <p class="the_pee"><u>About Us</u></p>
+                <p>Welcome to KeyTech, your gateway to a world where innovation meets the 
+                    art of typing. We're not just a brand; we're a community of Keyboard 
+                    Warriors dedicated to redefining the keyboard experience. At KeyTech, 
+                    we believe that every keystroke should be an expression of precision, 
+                    comfort, and style.</p>
+
+                <p class="the_pee"><u>Our Story</u></p>
+                <p>KeyTech was born out of a shared passion for keyboards and a vision to 
+                    create cutting-edge, customizable, and high-performance keyboards for 
+                    enthusiasts worldwide. Established in 2023, we embarked on a journey 
+                    to revolutionize the way people interact with their digital world.</p>
+
+                <p class="the_pee"><u>Our Mission</u></p>
+                <p>At the core of KeyTech's mission is a commitment to craftsmanship, 
+                    innovation, and user satisfaction. We aim to provide not just keyboards 
+                    but tools that elevate your typing experience to new heights. Whether 
+                    you're a gamer seeking the perfect gaming companion or a professional 
+                    in need of a reliable workhorse, KeyTech keyboards are designed to meet 
+                    and exceed your expectations.</p>
+            </div>
+
+            <div class="inside_box">
+                <p class="the_pee"><u>What Sets Us Apart</u></p>
+                <p>1. <u>Innovative Designs:</u> Our keyboards are crafted with an emphasis on design
+                     innovation. From sleek, minimalist aesthetics to vibrant and customizable
+                      RGB lighting, KeyTech keyboards are a blend of form and function. <br>
+
+                    2. <u>Unparalleled Performance:</u> We understand the importance of performance in 
+                    every keystroke. Our keyboards are equipped with cutting-edge technology to 
+                    deliver responsive and precise performance in gaming, typing, and beyond. <br>
+                    
+                    3. <u>Community-Centric Approach:</u> KeyTech is more than a brand; it's a community. 
+                    Join our Keyboard Warriors community to connect with fellow enthusiasts, share 
+                    tips, and stay updated on the latest trends in the keyboard world.</p> 
+                
+                <p class="the_pee"><u>Why Choose KeyTech</u></p>
+                <ul>
+                    <li><strong>Quality Keyboards:</strong> Each KeyTech keyboard undergoes rigorous testing 
+                        to ensure durability and performance.</li>
+                    <li><strong>Customer Satisfaction:</strong> We prioritize customer satisfaction, offering 
+                        responsive support and a hassle-free experience.</li>
+                    <li><strong>Continuous Innovation:</strong> KeyTech is committed to staying at the forefront 
+                        of keyboard technology, constantly pushing the boundaries of what's possible.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ending_container">
+            <p>Thank you for choosing KeyTech. Join us on this exciting journey as we redefine the keyboard 
+                experience, one keystroke at a time. Explore our range of high-quality keyboards and immerse 
+                yourself in the KeyTech experience.</p>
+        </div>
+ 
+    </div>
+        
+    </div>
+
+        <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOFU FA - KeyTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg1">
+    <!-- Header (Padding Area) -->
+    <div class="header">
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor('Tofu65 2.0')" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <div class="sudlanan_container">
+        <div class="sudlanan">
+            <img class="big_keeb" src="IMAGES/MAIN PAGE SELL 4.webp" alt="keebmain">
+            <div class="keeb_container">
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 4/KEYBOARD 1.webp" alt="keeb1">
+                </div>
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 4/KEYBOARD 2.webp" alt="keeb2">
+                </div>
+            </div>
+        </div>
+
+        <div class="sudlanan_sa_desc">
+            <div class="title_box">
+                <h1 class="for_the_p">TOFU65 2.0<br></h1>
+                <p class="the_pee">$272.00 US</p>
+            </div>
+        
+            <p class="instruction">CHOOSE YOUR PREFERRED VARIATION AND LAYOUT. <br>  TO DESELECT, RE-PRESS THE BUTTON.</p>
+            
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">Variations:</p>
+                    <p class="product_text">
+                        <button class="btn_size" onclick="changeColorBtn(this)">Clear White (RGB)</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">Cool Pink (Metal)</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">Poopy Brown (Metal)</button>
+                    </p>
+                </div>
+                <!--Put product desc here-->
+                <div class="description">
+                    <p class="for_the_p">In Stock!<br>In Stock!<br>In Stock!<br>In Stock!</p>
+                </div> 
+            </div>
+        
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">KBD layout:</p>
+                    <p class="product_text">
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">WKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">TKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">75%</button>
+                    </p>
+                </div>
+                
+                <!--Put product desc here (but unsure pako what to put here)-->
+                <div class="description">
+                    <p class="the_pee">Updates</p>
+                    <ul class="new_p">
+                        <li>The pre-order colors will ship in 1-2 weeks (2023-12-4)</li>
+                        <li>The pre-order colors will ship around the end of June (2024-06-08)</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!--(To Do) Add script for checkout & addtocart button-->
+            <!--Script Added-->
+            <div class="checkout_product">
+                <p class="product_text">
+                    <button class="checkout" onclick="addToCart('Tofu65 2.0', 298)">Add to Cart</button>
+                </p>
+            </div> 
+        </div>
+        
+    </div>
+
+    <div class="sudlanan_container">
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Specifications</p>
+        </div>
+        
+        <ul>
+            <li>Case material: Clear/Aluminum (anodized and electrostatically coated process)</li>
+            <li>Plate: PC/ Aluminum/ FR4/ Carbon fiber plate</li>
+            <li>PCB: 1.2 mm Flex cut Hot-swap PCB/1.2 mm Non-Flex cut Solder PCB, supports per-key RGB, QMK firmware, VIA support, USB-C port, with daughterboard+JST cable</li>
+            <li>Weight bar: Brass material (transparent E-coating after sandblasting process)</li>
+            <li>Structure: Top mount, silicone socks, silicone bowl, 3 types of structural support</li>
+            <li>Weight: ≈1.7 kg after assembly</li>
+            <li>Case screws: M2.5*6 mm, Torx size T8</li>
+            <li>Dimension: 313.7 mm (length) x 115.7 mm (width) x 18.5 mm (front) x 32.5 mm (back)</li>
+        </ul>
+    </div>
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Include</p>
+        </div>
+
+        <ul>
+            <p style="color: #d400ff;">Price $272 of the case kit only includes below items:</p>
+            <li>Aluminum top and bottom case x1</li>
+            <li>Brass weight x1</li>
+            <li>Plate x1</li>
+            <li>Silicone bowl x1 set  </li>
+            <li>Silicone socks x1 set</li>
+            <li>Foam kit (Case foam x1, PCB foam x1, EVA switch pad x1)</li>
+            <li>Cable x1</li>
+            <p style="color: #d400ff;">The following accessories should be purchased separately with the case kit together:</p>
+            <li>1.2 mm Flex cut Hot-swap PCB x1 (+ $55.00 USD)</li>
+        </ul>
+    </div>
+
+</div>
+
+        <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

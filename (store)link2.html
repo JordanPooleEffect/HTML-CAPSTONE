@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOFU FA - KeyTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg1">
+    <!-- Header (Padding Area) -->
+    <div class="header">
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor('Tofu Fa')" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <div class="sudlanan_container">
+        <div class="sudlanan">
+            <img class="big_keeb" src="IMAGES/MAIN PAGE SELL 2.webp" alt="keebmain">
+            <div class="keeb_container">
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 2/KEYBOARD 1.webp" alt="keeb1">
+                </div>
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 2/KEYBOARD 2.webp" alt="keeb2">
+                </div>
+            </div>
+        </div>
+
+        <div class="sudlanan_sa_desc">
+            <div class="title_box">
+                <p class="for_the_p">Tofu Fa<br></p>
+                <p class="the_pee">$99.00 US</p>
+            </div>
+        
+            <p class="instruction">CHOOSE YOUR PREFERRED VARIATION AND LAYOUT. <br>  TO DESELECT, RE-PRESS THE BUTTON.</p>
+            
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">Variations:</p>
+                    <p class="product_text">
+                        <button class="btn_size" onclick="changeColorBtn(this)">Adonis Dark Jade</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">E-coating Gold</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">Base Color - Silver</button>
+                    </p>
+                </div>
+                <!--Put product desc here-->
+                <div class="description">
+                    <p class="better_p">The design language of "Tofu65" typically involves simplicity, modernity, 
+                        and functionality. It may adopt a compact design with a 65% layout, 
+                        preserving essential letter and function keys while excluding the number pad. The appearance of the keyboard might be uniform and streamlined, emphasizing a minimalist aesthetic. Material choice and surface treatment are likely considerations.</p>
+                </div> 
+            </div>
+        
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">KBD layout:</p>
+                    <p class="product_text">
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">WKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">TKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">WK</button>
+                    </p>
+                </div>
+                
+                <!--Put product desc here (but unsure pako what to put here)-->
+                <div class="description">
+                    <p class="the_pee">Updates</p>
+                    <ul class="new_p">
+                        <li>Expected to be shipped after three months once the order placed</li>
+                        <li>R1 prototype approved (2023-10-5)</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!--(To Do) Add script for checkout & addtocart button-->
+            <!--Script Added-->
+            <div class="checkout_product">
+                <p class="product_text">
+                    <button class="checkout" onclick="addToCart('Tofu Fa', 99)">Add to Cart</button>
+                </p>
+            </div>   
+        </div>
+        
+    </div>
+
+    <div class="sudlanan_container">
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Specifications</p>
+        </div>
+        
+        <ul>
+            <li>Plate: PC/ Aluminum/ FR4/ Carbon fiber plate</li>
+            <li>PCB: 1.6 mm hot-swap (ANSI/ISO) PCB/ solder PCB, without Per-key RGB, only with caps lock key led indicator</li>
+            <li>Structure: O-ring (50a)</li>
+            <li>Weight bar: Stainless steel weight bar/Patina green finished brass weight bar/Patina brown finished brass weight bar</li>
+            <li>Plate: Polycarbonate (non-flex cut)/FR4/ Aluminum/Carbon fiber</li>
+            <li>Weight: case around 0.7 kg, stainless steel weight bar around 445g, brass weight bar around 470g</li>
+            <li>Design by KBDfans</li>
+            <li>Typing angle: 9°</li>
+        </ul>
+    </div>
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Include</p>
+        </div>
+
+        <ul>
+            <p style="color: #d400ff;">Price $99 of the case kit only includes below items:</p>
+            <li>Case x1</li>
+            <li>O-ring (50a) x1</li>
+            <li>Gateron clip-in stabilizers x1 set</li>
+            <li>Rubber feet x1 set</li>
+            <li>Brass weight bar x1</li>
+            <li>Carrying case x1</li>
+            <p style="color: #d400ff;">The following accessories should be purchased separately with the case kit together:</p>
+            <li>PCB + Foam kit x1 (PCB x 1, Case foam x1, PCB foam x1, EVA switch pad x1)</li>
+            <li>Plate x1</li>
+        
+        </ul>
+    </div>
+
+</div>
+
+        <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyTech - Keyboard Warriors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pixel">
+    <!--(PROBLEM) WHEN COMPUTER HAS DIFFERENT ASPECT RATIO, MA TARUG TANAN ELEMENTS-->
+    <!--(BANDAID SOLU) ZOOM OUT TO 75% (MACBOOK AIR)-->
+    
+    <!-- Header (Padding Area) -->
+    <div class="header">
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+        
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor()" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <!-- Code below is used to make the main content of our website -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 1.jpeg" alt="Image 1">
+        </div>
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 2.jpeg" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img class="slideshow_img" src="IMAGES/SLIDESHOW 3.jpg" alt="Image 3">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="content_box">
+        <p class="for_the_p">New Arrivals<hr></p>
+        <div class="box_container">
+            <div class="box">
+                <img src="IMAGES/MAIN PAGE SELL 1.webp" alt="Image 1">
+            </div>
+            <div class="box">
+                <img src="IMAGES/MAIN PAGE SELL 2.webp" alt="Image 2">
+            </div>
+            <div class="box">
+                <img src="IMAGES/MAIN PAGE SELL 3.webp" alt="Image 3">
+            </div>
+            <div class="box">
+                <img src="IMAGES/MAIN PAGE SELL 4.webp" alt="Image 4">
+            </div>
+        </div>
+    
+        <!--(To Do) Add links to the href's #-->
+        <div class="product_container">
+            <div class="product_info">
+                <a href="(store)link1.html">KBD8X MKIII</a> 
+                <span>$209.99 US</span>
+            </div>
+            <div class="product_info">
+                <a href="(store)link2.html">TOFU FA</a> 
+                <span>$99.00 US</span>
+            </div>
+            <div class="product_info">
+                <a href="(store)link 3.html">TACO</a> 
+                <span>$298.00 US</span>
+            </div>
+            <div class="product_info">
+                <a href="(store)link 4.html">TOFU65 2.0</a> 
+                <span>$272.00 US</span>
+            </div>
+        </div>
+
+        <hr>
+        <h2>User Reviews</h2>
+        <div class="reviews_container">
+            <div class="review">
+                <p class="review_text">I recently had the pleasure of diving into the
+                     mesmerizing world of KeyTech keyboards, and I must say, the experience 
+                     has been nothing short of extraordinary. As a dedicated keyboard enthusiast, 
+                     I've come across various brands and models, but KeyTech has truly captured 
+                     my attention with its unparalleled craftsmanship, innovative designs, and 
+                     superior performance.</p>
+                <p class="review_author"><br>XxCool_Kid123xX</p>
+            </div>
+            
+            <div class="review">
+                <p class="review_text">KeyTech keyboards are not just about looks; they deliver 
+                    an exceptional typing experience. The tactile feedback and responsiveness of 
+                    the keys provide a satisfying feel with every keystroke. Whether you're a gamer 
+                    looking for precise control or a professional seeking efficient typing, KeyTech 
+                    keyboards rise to the occasion, delivering a performance that exceeds expectations.</p>
+                <p class="review_author">Si_Agawn_Aguila</p>
+            </div>
+        </div>
+
+        <div class="reviews_container">
+            <div class="review">
+                <p class="review_text">I was delighted to explore the New Arrivals section on the 
+                    website, showcasing the latest and most innovative additions to the KeyTech lineup. 
+                    The Limited Edition keyboards are a collector's dream, featuring exclusive designs 
+                    and enhanced features that make them stand out from the crowd. It's clear that 
+                    KeyTech is dedicated to staying ahead of the curve and continuously pushing the 
+                    boundaries of keyboard technology.</p>
+                <p class="review_author">Hot_Headed143</p>
+            </div>
+            
+            <div class="review">
+                <p class="review_text">What truly sets KeyTech apart is its commitment to customization. 
+                    The keyboards come with a range of customizable features, from RGB lighting options 
+                    to programmable keys. This level of personalization allows users to tailor their 
+                    keyboards to meet their specific needs, making every typing or gaming session a 
+                    uniquely enjoyable experience.</p>
+                <p class="review_author"><br>Professional Cool Kid</p>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

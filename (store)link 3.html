@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOFU FA - KeyTech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg1">
+    <!-- Header (Padding Area) -->
+    <div class="header">
+        <!-- (TO DO) Make a dropdown menu for selling stuff -->
+        <div class="dropdown">
+            <a class="home_btn" href="mainpage.html">Home</a>
+        </div>
+
+        <!--(To Do) Add links to the href's #-->
+        <div class="dropdown">
+            <div class="dropbtn">Shop &darr;</div>
+            <div class="dropdown-content">
+                <a href="(store)link1.html">KBD8X MKIII</a>
+                <a href="(store)link2.html">Tofu Fa</a>
+                <a href="(store)link 3.html">TACO</a>
+                <a href="(store)link 4.html">Tofu65 2.0</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropbtn">Incoming Stock &darr;</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="branding">
+            <div class="conversion-container">
+                <p id="usd-to-php">Loading...</p>
+            </div>
+            <div class="company_name">-KeyTech-</div>
+            <div class="slogan">Keyboard Warriors</div>
+        </div>
+
+        <div class="branding">
+            <a href="aboutus.html" class="right_side_header">About Us</a>
+        </div>
+
+        <div class="branding">
+            <button id="usd-to-php-btn" class="right_side">PHP TO USD</button>
+        </div>
+
+        <div class="branding">
+            <a href="#" class="right_side" onclick="openCart()">Cart</a>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <button onclick="checkoutColor('TACO')" class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <p class="the_pee" id="colorChange">KBDFans Inspired webpage</p>
+
+    <div class="sudlanan_container">
+        <div class="sudlanan">
+            <img class="big_keeb" src="IMAGES/(STORE) LINK 3/MAIN KEEB.webp" alt="keebmain">
+            <div class="keeb_container">
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 3/KEYBOARD 1.webp" alt="keeb1">
+                </div>
+                <div class="keeb">
+                    <img src="IMAGES/(STORE) LINK 3/KEYBOARD 2.webp" alt="keeb2">
+                </div>
+            </div>
+        </div>
+
+        <div class="sudlanan_sa_desc">
+            <div class="title_box">
+                <p class="for_the_p">TACO<br></p>
+                <p class="the_pee">$298.00 US</p>
+            </div>
+        
+            <p class="instruction">CHOOSE YOUR PREFERRED VARIATION AND LAYOUT. <br>  TO DESELECT, RE-PRESS THE BUTTON.</p>
+            
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">Variations:</p>
+                    <p class="product_text">
+                        <button class="btn_size" onclick="changeColorBtn(this)">E-White</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">PurrPol</button>
+                        <button class="btn_size" onclick="changeColorBtn(this)">Black AF</button>
+                    </p>
+                </div>
+                <!--Put product desc here-->
+                <div class="description">
+                    <p class="better_p">Taco is a well known street meal, it's a portion of delicious, convenient and diverse food that people enjoy for decades.
+
+                        No matter what your life circumstances are, a yummy taco always can bring you back to the day one moment.
+                        
+                        A minimalist keyboard that throws you back to the day when you first ever fall into the mechanical keyboard world.</p>
+                </div> 
+            </div>
+        
+            <div class="product_container">
+                <div class="product">
+                    <p class="the_pee">KBD layout:</p>
+                    <p class="product_text">
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">WKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">TKL</button>
+                        <button class="btn_size1" onclick="changeColorBtn1(this)">100%</button>
+                    </p>
+                </div>
+                
+                <!--Put product desc here (but unsure pako what to put here)-->
+                <div class="description">
+                    <p class="the_pee">Updates</p>
+                    <ul class="new_p">
+                        <li>Start flfiling orders.(2023-12-4)</li>
+                        <li>Will finish production around 2023-12-25</li>
+                        <li>Estimated shipping date: September, 2024</li>
+                        <li>R2 prototype approved(2023-12-3)</li>
+                        <li>In Production(2023-11-24)</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!--(To Do) Add script for checkout & addtocart button-->
+            <!--Script Added-->
+            <div class="checkout_product">
+                <p class="product_text">
+                    <button class="checkout" onclick="addToCart('TACO', 298)">Add to Cart</button>
+                </p>
+            </div> 
+        </div>
+        
+    </div>
+
+    <div class="sudlanan_container">
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Specifications</p>
+        </div>
+        
+        <ul>
+            <li>Typing angle: 8°</li>
+            <li>Structure: Top mount/Silicone bowl gasket</li>
+            <li>PCB: 1.2 mm Non-flex cut Hot-swap PCB/1.6 mm Non-flex cut Solder PCB, USB-C, supports VIA/QMK, with daughterboard+JST cable</li>
+            <li>Weight bar: Sandblasted Brass/PVD Stainless Steel Weight</li>
+            <li>Plate: Non-flex cut Polycarbonate, Flex cut FR4/Carbon fiber/Aluminum Black</li>
+            <li>Weight: ~2.5 kg (built with stainless steel weight bar)</li>
+            <li>Design by KBDfans</li>
+            <li>Case screws: M2.5*6 mm, Torx size T8</li>
+            <li>Price range: 278 USD ~ 348 USD (Shipping Fees)</li>
+        </ul>
+    </div>
+
+    <div class="product_spec">
+        <div class="new_title_box">
+            <p class="for_the_p">Include</p>
+        </div>
+
+        <ul>
+            <p style="color: #d400ff;">Price $259 of the case kit only includes below items:</p>
+            <li>Case x1</li>
+            <li>Weight bar x1</li>
+            <li>GPCB x1</li>
+            <li>Foam kit x1 (Bottom poron+Plate poron+EVA switch pad)</li>
+            <li>Silicone bowl x1 set (50g 60g 70g )</li>
+            <li>Screws and rubber feet x1 set/li>
+            <p style="color: #d400ff;">The following accessories should be purchased separately with the case kit together:</p>
+            <li>Plate x1</li>
+        </ul>
+    </div>
+
+</div>
+
+        <!--(To Do) Find a way to design a better footer && must change to clickable links on fillers-->
+    <footer>
+        <div class="footer_content">
+            <div class="fillers">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
